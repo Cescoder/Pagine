@@ -73,17 +73,6 @@
             transform: scale(1.02);
         }
 
-        /* Testo nascosto visibile solo al click */
-        #secret-message {
-            display: none;
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #e6ffed;
-            border: 1px solid #34d058;
-            border-radius: 6px;
-            color: #22863a;
-            font-weight: bold;
-        }
 
         a.btn {
             display: inline-block;
@@ -108,33 +97,15 @@
         <h2>Page Not Found</h2>
         
         <!-- Il Capibara triste per l'errore -->
-        <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?auto=format&fit=crop&w=600&q=80" 
+        <img src="sad_capi.webp" 
              alt="Capibara" 
              class="capybara-img" 
-             onclick="revealSecret()" 
              title="Anche il capibara sembra perplesso...">
 
         <p>La pagina che stai cercando non esiste o è stata spostata.</p>
 
-        <!-- Messaggio Segreto (si sblocca se cliccano l'immagine) -->
-        <div id="secret-message">
-            🔑 INDIZIO TROVATO:<br>
-            "Non tutti gli errori sono casuali. Cerca l'audio chiamato <code>track_capy_42.mp3</code> nell'archivio."
-        </div>
-
         <br>
         <a href="/" class="btn">Torna alla Home</a>
     </div>
-
-    <script>
-        function revealSecret() {
-            var msg = document.getElementById("secret-message");
-            if (msg.style.display === "none" || msg.style.display === "") {
-                msg.style.display = "block";
-            } else {
-                msg.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
