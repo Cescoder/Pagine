@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+
+    <!-- 
+    ===================================================================
+    [INDIZIO NASCOSTO NEL CODICE SORGE]
+    COMPLIMENTI! Hai ispezionato la pagina come un vero hacker.
+    La chiave per sbloccare l'archivio audio è: "CAPYBARA_MASTER_2026"
+    Cerca il file audio numero #42404 o usa questa stringa come password!
+    ===================================================================
+    -->
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f6f8fa;
+            color: #24292e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #e1e4e8;
+        }
+
+        h1 {
+            font-size: 72px;
+            margin: 0;
+            color: #d73a49;
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: #586069;
+        }
+
+        p {
+            color: #586069;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Immagine del capibara */
+        .capybara-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            cursor: pointer; /* Fa capire che si può cliccare se si riflette bene! */
+            transition: transform 0.2s;
+        }
+
+        .capybara-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Testo nascosto visibile solo al click */
+        #secret-message {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e6ffed;
+            border: 1px solid #34d058;
+            border-radius: 6px;
+            color: #22863a;
+            font-weight: bold;
+        }
+
+        a.btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        a.btn:hover {
+            background-color: #0255b5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        
+        <!-- Il Capibara triste per l'errore -->
+        <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?auto=format&fit=crop&w=600&q=80" 
+             alt="Capibara" 
+             class="capybara-img" 
+             onclick="revealSecret()" 
+             title="Anche il capibara sembra perplesso...">
+
+        <p>La pagina che stai cercando non esiste o è stata spostata.</p>
+
+        <!-- Messaggio Segreto (si sblocca se cliccano l'immagine) -->
+        <div id="secret-message">
+            🔑 INDIZIO TROVATO:<br>
+            "Non tutti gli errori sono casuali. Cerca l'audio chiamato <code>track_capy_42.mp3</code> nell'archivio."
+        </div>
+
+        <br>
+        <a href="/" class="btn">Torna alla Home</a>
+    </div>
+
+    <script>
+        function revealSecret() {
+            var msg = document.getElementById("secret-message");
+            if (msg.style.display === "none" || msg.style.display === "") {
+                msg.style.display = "block";
+            } else {
+                msg.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
